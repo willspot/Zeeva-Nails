@@ -23,4 +23,5 @@ RUN php artisan config:cache \
 ENV PORT=8000
 EXPOSE 8000
 
-CMD ["php", "-S", "0.0.0.0:8000", "-t", "public"]
+CMD ["php", "-S", "0.0.0.0:8000", "-t", "public", "/app/server.php"]
+
