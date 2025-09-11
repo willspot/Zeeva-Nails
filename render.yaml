@@ -12,7 +12,7 @@ services:
       - key: APP_KEY
         value: base64:TbQtIVidbQi4Jht7uBpljpHkTXnCNOOH1nZsrwRj5uo=
       - key: APP_DEBUG
-        value: "false"
+        value: "true"
       - key: APP_URL
         value: https://zeeva-nails.onrender.com
       - key: APP_LOCALE
