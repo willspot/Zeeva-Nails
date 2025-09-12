@@ -16,28 +16,46 @@
   <x-navbar />
 
   <!-- Hero Section -->
-<section class="relative flex flex-col items-center justify-center text-center pt-32 md:pt-60 px-6">
+<section class="relative flex flex-col items-center justify-center text-center pt-32 md:pt-40 px-6">
 
   <!-- Floating Icons -->
   <style>
-    .icon-1 { top: 160px; left: 40px; opacity: 50%; }
+    .icon-1 { top: 160px; left: 30px; opacity: 50%; }
     .icon-2 { bottom: 130px; left: 30px; opacity: 50%; }
-    .icon-3 { top: 150px; right: 40px; opacity: 50%; }
+    .icon-3 { top: 170px; right: 40px; opacity: 50%; }
     .icon-4 { bottom: 40px; right: 30px; opacity: 50%; }
 
     @media (min-width: 767px) and (max-width: 1023px) {
-        .icon-1 { top: 160px; left: 120px; }
+        .icon-1 { top: 200px; left: 120px; }
         .icon-2 { bottom: 100px; left: 100px; }
-        .icon-3 { top: 170px; right: 120px; }
+        .icon-3 { top: 200px; right: 120px; }
         .icon-4 { bottom: 160px; right: 100px; }
     }
 
     @media (min-width: 1024px) {
-      .icon-1 { top: 195px; left: 390px; }
-      .icon-2 { bottom: 65px; left: 290px; }
-      .icon-3 { top: 260px; right: 290px; }
-      .icon-4 { bottom: 53px; right: 257px; }
+      .icon-1 { top: 95px; left: 90px; }
+      .icon-2 { bottom: 65px; left: 190px; }
+      .icon-3 { top: 90px; right: 90px; }
+      .icon-4 { bottom: 53px; right: 157px; }
     }
+
+    @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .icon-1.animate-float { animation-delay: 0s; }
+  .icon-2.animate-float { animation-delay: 1s; }
+  .icon-3.animate-float { animation-delay: 2s; }
+  .icon-4.animate-float { animation-delay: 3s; }
   </style>
 
   <!-- Floating Icons -->
@@ -55,30 +73,30 @@
   <h1 class="text-3xl md:text-7xl cormorant font-bold leading-snug text-gray-800">
     <span class="text-pink-500">Every Detail</span> Perfected, Every
   </h1>
-  <h1 class="text-3xl md:text-7xl cormorant font-bold pt-4 leading-snug text-gray-800">
+  <h1 class="text-3xl md:text-7xl cormorant font-bold pt-2 leading-snug text-gray-800">
     Nail A Work Of Art!
   </h1>
 
   <!-- Paragraph -->
-  <p class="mt-4 md:mt-6 max-w-xl text-sm md:text-lg font-medium text-gray-600">
+  <p class="mt-4 md:mt-6 max-w-xl text-sm md:text-base font-medium text-gray-600">
     At Zeeva Nails, our artistry lives in the details: the seamless gloss,
     the delicate sparkle, the color that matches your mood.
   </p>
 
   <!-- Buttons -->
-  <div class="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4">
-    <a href="{{ url('/bookings') }}" class="px-6 py-3 rounded-lg bg-pink-600 text-white font-medium shadow hover:bg-pink-700 transition">
+  <div class="mt-16 md:mt-8 flex flex-row sm:flex-row gap-4">
+    <a href="{{ url('/bookings') }}" class="px-4 py-3 text-sm rounded-lg bg-pink-600 text-white font-medium shadow hover:bg-pink-700 transition">
       Book Now
     </a>
-    <a href="#our-story" class="px-6 py-3 rounded-lg border border-pink-400 text-gray-700 font-medium hover:bg-pink-50 transition">
+    <a href="#our-story" class="px-4 py-3 text-sm rounded-lg border border-pink-400 text-gray-700 font-medium hover:bg-pink-50 transition">
       Learn More
     </a>
   </div>
 
   <!-- Image -->
-  <div class="mt-6 md:mt-10">
+  <div class="mt-16 md:mt-8">
     <img src="/images/nail2.png" alt="Nail Art"
-         class="mx-auto h-40 sm:h-56 md:h-[300px] object-contain">
+         class="mx-auto h-40 sm:h-56 md:h-[200px] object-contain">
   </div>
 </section>
 

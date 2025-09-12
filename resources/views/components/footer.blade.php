@@ -57,7 +57,7 @@ $onHome = request()->is('/');
     <!-- Bottom Text -->
     <div class="text-center text-xs mt-10 pt-6">
         <p>© 2025 All rights reserved, Designed & Developed <br>
-            by <a href="#" class="text-pink-400 hover:underline">Mide.Design </a>
+            by <a href="https://www.behance.net/ayomide38" class="text-pink-400 hover:underline">Mide.Design </a>
             <a href="https://alabiwilliamssamuel.vercel.app" class="text-pink-400 hover:underline">| Willspot Dev</a>
         </p>
     </div>

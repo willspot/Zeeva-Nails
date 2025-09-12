@@ -19,7 +19,7 @@
     
 
     <!-- Loyalty Section -->
-    <section class="relative z-10 text-center px-6 py-16 pt-60 max-w-6xl mx-auto">
+    <section class="relative z-10 text-center px-6 py-16 pt-40 max-w-6xl mx-auto">
         <!-- Floating Icons -->
         <div class="absolute top-35 left-0 animate-float">
             <!-- Glow -->

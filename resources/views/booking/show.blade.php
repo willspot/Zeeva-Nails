@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Booking Details | Zeeva Nails</title>
-  @vite('resources/css/app.css')
-</head>
-<body class="min-h-screen bg-[#FEEDF8]">
-  <x-navbar />
+<x-app-layout>
+    <x-slot name="header">
+        View
+    </x-slot>
 
-  <section class="max-w-5xl mx-auto mb-80 mt-80 bg-white rounded-2xl shadow p-8 border border-pink-100">
+  <section class="max-w-5xl mx-auto mb-10 mt-10 bg-white rounded-2xl shadow p-8 border border-pink-100">
     @if(!$booking)
         <h2 class="text-xl font-semibold text-gray-900">No booking found</h2>
         <p class="text-gray-600 mt-2">Please check your confirmation code and try again.</p>
@@ -49,6 +44,4 @@
     @endif
   </section>
 
-  <x-footer />
-</body>
-</html>
+</x-app-layout>
