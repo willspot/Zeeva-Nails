@@ -262,7 +262,7 @@
             C880,60 960,160 1060,170
             C1160,180 1240,140 1400,120
             L1440,100 L1440,260 L0,260 Z"
-            fill="#FDE4F5" />
+            fill="#FBE7F3" />
         </svg>
     </div>
 
@@ -427,7 +427,7 @@
 
     <div class="max-w-6xl mx-auto text-center pb-[120px] px-6">
         <!-- Title -->
-        <h2 class="font-serif text-3xl md:text-4xl font-medium text-gray-900">What Our Clients Say</h2>
+        <h2 class="font-serif text-xl md:text-4xl font-medium text-gray-900">What Our Clients Say</h2>
 
 
         <!-- Testimonial Cards -->

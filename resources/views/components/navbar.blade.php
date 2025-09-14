@@ -107,4 +107,55 @@ body, html {
   });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Only the sections that exist in your nav
+  const sections = Array.from(document.querySelectorAll("#services, #our-story, #gallery"));
+  const navLinks = Array.from(document.querySelectorAll('#navbar a, #mobileMenu a'));
 
+  const linkMatchesId = (link, id) => {
+    const href = link.getAttribute("href") || "";
+    return href.includes(`#${id}`) || href.includes(`scrollTo=${id}`);
+  };
+
+  const clearActive = () => {
+    navLinks.forEach(l => l.classList.remove("text-pink-600", "font-semibold"));
+  };
+
+  const setActive = (id) => {
+    clearActive();
+    navLinks.forEach(link => {
+      if (linkMatchesId(link, id)) {
+        link.classList.add("text-pink-600", "font-semibold");
+      }
+    });
+  };
+
+  const onScroll = () => {
+    const scrollPos = window.scrollY + window.innerHeight / 3;
+    let current = null;
+
+    sections.forEach((section) => {
+      const top = section.offsetTop;
+      const bottom = top + section.offsetHeight;
+      if (scrollPos >= top && scrollPos < bottom) {
+        current = section.id;
+      }
+    });
+
+    if (current) {
+      setActive(current);
+    } else {
+      clearActive();
+    }
+
+    // If above first section (hero), clear active
+    if (window.scrollY < sections[0].offsetTop - 100) {
+      clearActive();
+    }
+  };
+
+  window.addEventListener("scroll", onScroll);
+  window.addEventListener("load", onScroll);
+});
+</script>
