@@ -115,7 +115,7 @@
         <p class="text-gray-700 font-semibold mt-6 leading-relaxed max-w-3xl mx-auto">
             Zeeva Nails was born from a simple dream: to create a sanctuary where beauty, artistry,
             and self-care come together in perfect harmony. Founded by master nail technician
-            <span class="text-pink-500">Halima Lawal</span>, our salon began
+            <span class="text-pink-500">Halima Azeez</span>, our salon began
             as a small studio with a big vision to transform
             <span class="text-pink-500">the nail care experience into something truly extraordinary</span>.
             What started as Zeeva&apos;s passion for nail art during her college years has blossomed into
@@ -143,7 +143,7 @@
             <p class="text-gray-800 italic">
                 “Every nail tells a story, and we&apos;re here to help you write yours beautifully.”
             </p>
-            <p class="text-pink-500 font-medium mt-4">— Halima Lawal, Founder</p>
+            <p class="text-pink-500 font-medium mt-4">— Halima Azeez, Founder</p>
         </div>
 
         <!-- Features -->
@@ -267,7 +267,7 @@
     </div>
 
   
-    <div class="relative z-20 bg-[#FBE7F3] max-w-auto mx-auto text-center pb-[120px] pt-[120px] px-6">
+    <div class="relative z-20 bg-[#FBE7F3] max-w-auto mx-auto text-center pb-[120px] pt-[20px] px-6">
         <!-- Title -->
         <h2 class="font-serif text-3xl md:text-4xl font-medium text-gray-900">Our Services</h2>
 
